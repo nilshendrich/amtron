@@ -21,7 +21,7 @@ Set Tariff data in order to control time based charging, i.e. 'DevMode' equals '
     
   ```
   {
-  	"Permanent": [boolean],           /* if changes made here are saved permanently */
+    "Permanent": [boolean],           /* if changes made here are saved permanently */
     "MaxCurrT1": [number],           /* current per phase in A while charging with Time control during main tariff */
     "BeginH_T1": [number],           /* Hour component of start of the main tariff time window */
     "BeginM_T1": [number],           /* Minute component of start of the main tariff time window */
@@ -49,7 +49,7 @@ Set Tariff data in order to control time based charging, i.e. 'DevMode' equals '
 
   ```json
   {
-  	"Permanent": true,
+    "Permanent": true,
     "MaxCurrT1": 0, 
     "BeginH_T1": 6,
     "BeginM_T1": 0,
