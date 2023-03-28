@@ -30,4 +30,4 @@ In the document it is called **APP-Pin**.
 ---
 * [Set EnergyManager parameters](./docs/api/HomeManager/post.md): `POST /HomeManager`
 ---
-* [Set Tariff Data Parameters](.docs/api/TariffData/post.md)): `POST /TariffData`
+* [Set Tariff Data Parameters](./docs/api/TariffData/post.md): `POST /TariffData`
