@@ -69,6 +69,11 @@ Retrieves information how the wallbox charges the vehicle.
 
   * **Code:** 403 FORBIDDEN
 
+* **CURL Example**
+```bash
+curl -H 'Accept: application/json' 'http://[amtron]:25000/MHCP/1.0/ChargeData?DevKey=[devkey]'
+```
+
 * **Notes:**
 
     * The **charging modes** here are named differently than in the ChargeApp.

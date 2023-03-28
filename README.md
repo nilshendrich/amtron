@@ -29,3 +29,5 @@ In the document it is called **APP-Pin**.
 * [Set Charging Information](./docs/api/ChargeData/post.md): `POST /ChargeData`
 ---
 * [Set EnergyManager parameters](./docs/api/HomeManager/post.md): `POST /HomeManager`
+---
+* [Set Tariff Data Parameters](.docs/api/Tariff/post.md)): `POST /TariffData`
