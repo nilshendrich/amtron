@@ -1,5 +1,4 @@
-**Get ChargeData**
-----
+# Get ChargeData
 
 Retrieves information how the wallbox charges the vehicle.
 
@@ -11,21 +10,22 @@ Retrieves information how the wallbox charges the vehicle.
   
   `GET`
   
-*  **URL Params**
+* **URL Params**
 
    **Required:**
- 
+
    `devKey=[integer]`
 
 * **Success Response:**
   
-  * **Code:** 200 <br />
+  * **Code:** 200
+
     **Datatypes:**
-      * `EnumChargingState: [Idle, Charging, Paused, StandbyConnect, StandbyAuthorize, Terminated]`
-    
-    **Content:** 
-    
-    ```
+    * `EnumChargingState: [Idle, Charging, Paused, StandbyConnect, StandbyAuthorize, Terminated]`
+  
+    **Content:**
+  
+    ```js
     {
       "ChgState": [EnumChargingState],
       "Tariff": [string],      /* Current tariff */
@@ -64,21 +64,21 @@ Retrieves information how the wallbox charges the vehicle.
       "HCCP": [string]         /* ? */
     }
     ```
- 
+
 * **Error Response:**
 
   * **Code:** 403 FORBIDDEN
 
 * **CURL Example**
+
 ```bash
 curl -H 'Accept: application/json' 'http://[amtron]:25000/MHCP/1.0/ChargeData?DevKey=[devkey]'
 ```
 
 * **Notes:**
 
-    * The **charging modes** here are named differently than in the ChargeApp.
+  * The **charging modes** here are named differently than in the ChargeApp.
     Remote is called App Control, Home Manager is Energy Manager and Time is Time control.
-    * **Tariffs**: T1 - Main tariff, T2 - Off-peak tariff, T3 - Solar energy tariff
-    * The objects prefixed with **T** have the same values as values without the prefix. 
-    I'm not sure what purpose they serve.
-
+  * **Tariffs**: T1 - Main tariff, T2 - Off-peak tariff, T3 - Solar energy tariff
+  * The objects prefixed with **T** have the same values as values without the prefix.
+  I'm not sure what purpose they serve.
