@@ -56,6 +56,12 @@ for HomeManager.
   }
   ```
 
+* **CURL Example**
+```bash
+curl -X POST -d '{ "Permanent": false, "NrgDemand": 15000, "ExcessNrg": false, "SolarPrice": null, "RemTime": 1250 }' -H 'Content-Type: application/json' -v 'http://[amtron]:25000/MHCP/1.0/HomeManager?DevKey=[devkey]'
+```
+
+
 * **Notes:**
 
     RemTime is always calculated since the point in time when the vehicle was plugged in to the wallbox.
