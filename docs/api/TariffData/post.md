@@ -1,5 +1,4 @@
-**Tariff parameters**
-----
+# Tariff parameters
 
 Set Tariff data in order to control time based charging, i.e. 'DevMode' equals 'Time'.
 
@@ -11,15 +10,15 @@ Set Tariff data in order to control time based charging, i.e. 'DevMode' equals '
   
   `POST`
   
-*  **URL Params**
+* **URL Params**
 
    **Required:**
- 
+
    `devKey=[integer]`
 
-* **Data Params** <br />
-    
-  ```
+* **Data Params**
+  
+  ```js
   {
     "Permanent": [boolean],           /* if changes made here are saved permanently */
     "MaxCurrT1": [number],           /* current per phase in A while charging with Time control during main tariff */
@@ -36,7 +35,7 @@ Set Tariff data in order to control time based charging, i.e. 'DevMode' equals '
 * **Success Response:**
   
   * **Code:** 200
- 
+
 * **Error Response:**
 
   * **Code:** 401 UNAUTHORIZED
@@ -62,7 +61,7 @@ Set Tariff data in order to control time based charging, i.e. 'DevMode' equals '
   ```
 
 * **CURL Example**
-```bash
-curl -X POST -d '{"Permanent": true, "MaxCurrT1": 0, "BeginH_T1": 6, "BeginM_T1": 0, "PriceT1": 510, "MaxCurrT2": 16, "BeginH_T2": 0, "BeginM_T2": 0, "PriceT2": 60 }' -H 'Content-Type: application/json' -v 'http://[amtron]:25000/MHCP/1.0/TariffData?DevKey=[devkey]'
-```
 
+  ```bash
+  curl -X POST -d '{"Permanent": true, "MaxCurrT1": 0, "BeginH_T1": 6, "BeginM_T1": 0, "PriceT1": 510, "MaxCurrT2": 16, "BeginH_T2": 0, "BeginM_T2": 0, "PriceT2": 60 }' -H 'Content-Type: application/json' -v 'http://[amtron]:25000/MHCP/1.0/TariffData?DevKey=[devkey]'
+  ```

@@ -1,5 +1,4 @@
-**Get DeviceInfo**
-----
+# Get DeviceInfo
 
 Retrieves information about the wallbox.
 
@@ -11,22 +10,22 @@ Retrieves information about the wallbox.
   
   `GET`
   
-*  **URL Params**
+* **URL Params**
 
    **Required:**
- 
+
    `devKey=[integer]`
 
 * **Success Response:**
   
-  * **Code:** 200 <br />
+  * **Code:** 200
     **Datatypes:**
-      * `EnumDevMode: [Remote, HomeManager, Time]` <br/>
-      * `EnumChargingState: [Idle, Charging, Paused, StandbyConnect, StandbyAuthorize, Terminated]`
-    
-    **Content:** 
-    
-    ```
+    * `EnumDevMode: [Remote, HomeManager, Time]`
+    * `EnumChargingState: [Idle, Charging, Paused, StandbyConnect, StandbyAuthorize, Terminated]`
+  
+    **Content:**
+  
+    ```js
     {
       "DevName": [string],        /* Name of the device */
       "LocTime": [number],        /* timestamp */
@@ -59,7 +58,7 @@ Retrieves information about the wallbox.
       "MaxCurrWb": [number]       /* upper limit for charging current per phase in A */
     }
     ```
- 
+
 * **Error Response:**
 
   * **Code:** 403 FORBIDDEN
@@ -68,4 +67,3 @@ Retrieves information about the wallbox.
 
     The charging modes here are named differently than in the ChargeApp.
     Remote is called App Control, Home Manager is Energy Manager and Time is Time control.
-

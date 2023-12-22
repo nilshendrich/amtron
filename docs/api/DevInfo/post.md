@@ -1,5 +1,4 @@
-**Set DevInfo**
-----
+# Set DevInfo
 
 Sets new device info, for example the current charging mode.
 
@@ -11,20 +10,20 @@ Sets new device info, for example the current charging mode.
   
   `POST`
   
-*  **URL Params**
+* **URL Params**
 
    **Required:**
- 
+
    `devKey=[integer]`
 
-* **Data Params** <br />
+* **Data Params**
 
   **Datatypes:**
-    * `EnumDevMode: [Remote, HomeManager, Time]`<br />
+  * `EnumDevMode: [Remote, HomeManager, Time]`
 
   All parameters can be set to null if no change is intended.
-    
-  ```
+  
+  ```js
   {
     "DevName": [string],        /* device name */
     "LocTime": [string],        /* timestamp */
@@ -40,7 +39,7 @@ Sets new device info, for example the current charging mode.
 * **Success Response:**
   
   * **Code:** 200
- 
+
 * **Error Response:**
 
   * **Code:** 401 UNAUTHORIZED
@@ -51,7 +50,7 @@ Sets new device info, for example the current charging mode.
 
 * **Sample Data Params:**
 
-  ```json
+  ```js
   {
     "DevName": null,
     "LocTime": null,
