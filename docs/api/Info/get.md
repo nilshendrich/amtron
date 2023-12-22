@@ -50,7 +50,7 @@ This section includes several commands to get additional information. Instead of
       "AMSN":[number],
       "AMIN":[string],
       "AMES":[boolean],
-      "AMFI":t[boolean]rue,
+      "AMFI":[boolean],
       "AMPS":[boolean],
       "HCMC":[string],
       "HCME":[number]
