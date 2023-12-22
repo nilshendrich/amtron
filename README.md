@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repo contains a reverse-engineered documentation for the REST Api of a Mennekes Amtron 
+This repo contains a reverse-engineered documentation for the REST Api of a Mennekes Amtron
 EV-Charger equipped with Networking.
 
 The information provided here was retrieved using the ChargeApp on Android and the Amtron Xtra 11 C2.
@@ -24,10 +24,12 @@ In the document it is called **APP-Pin**.
 
 * [Get Device Information](./docs/api/DevInfo/get.md): `GET /DevInfo`
 * [Set Device Information](./docs/api/DevInfo/post.md): `POST /DevInfo`
----
+
 * [Get Charging Information](./docs/api/ChargeData/get.md): `GET /ChargeData`
 * [Set Charging Information](./docs/api/ChargeData/post.md): `POST /ChargeData`
----
+
 * [Set EnergyManager parameters](./docs/api/HomeManager/post.md): `POST /HomeManager`
----
+
 * [Set Tariff Data Parameters](./docs/api/TariffData/post.md): `POST /TariffData`
+* [Set Tariff Data Parameters](./docs/api/TariffData/post.md): `POST /TariffData`
+* [Get Other Information](./docs/api/Info/get.md)
