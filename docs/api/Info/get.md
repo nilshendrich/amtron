@@ -61,6 +61,12 @@ This section includes several commands to get additional information. Instead of
 
   * **Code:** 403 FORBIDDEN
 
+* **CURL Example**
+
+  ```bash
+  curl -H 'Accept: application/json' 'http://[amtron]:25000/MHCP/1.1/QSInfo?Pin=[devkey]'
+  ```
+
 ## Get VehicleInfo
 
 * **URL**
@@ -98,6 +104,12 @@ This section includes several commands to get additional information. Instead of
 
   * **Code:** 403 FORBIDDEN
 
+* **CURL Example**
+
+  ```bash
+  curl -H 'Accept: application/json' 'http://[amtron]:25000/MHCP/1.1/VehicleInfo?Pin=[devkey]'
+  ```
+
 ## Get TimeInfo
 
 * **URL**
@@ -133,6 +145,12 @@ This section includes several commands to get additional information. Instead of
 * **Error Response:**
 
   * **Code:** 403 FORBIDDEN
+
+* **CURL Example**
+
+  ```bash
+  curl -H 'Accept: application/json' 'http://[amtron]:25000/MHCP/1.1/TimeInfo?Pin=[devkey]'
+  ```
 
 ## Get CustomerInfo
 
@@ -176,6 +194,12 @@ This section includes several commands to get additional information. Instead of
 
   * **Code:** 403 FORBIDDEN
 
+* **CURL Example**
+
+  ```bash
+  curl -H 'Accept: application/json' 'http://[amtron]:25000/MHCP/1.1/CustomerInfo?Pin=[devkey]'
+  ```
+
 ## Get InstallInfo
 
 * **URL**
@@ -213,6 +237,12 @@ This section includes several commands to get additional information. Instead of
 * **Error Response:**
 
   * **Code:** 403 FORBIDDEN
+
+* **CURL Example**
+
+  ```bash
+  curl -H 'Accept: application/json' 'http://[amtron]:25000/MHCP/1.1/InstallInfo?Pin=[devkey]'
+  ```
 
 ## Get SupportInfo
 
@@ -258,6 +288,12 @@ This section includes several commands to get additional information. Instead of
 
   * **Code:** 403 FORBIDDEN
 
+* **CURL Example**
+
+  ```bash
+  curl -H 'Accept: application/json' 'http://[amtron]:25000/MHCP/1.1/SupportInfo?Pin=[devkey]'
+  ```
+
 ## Get EnergyManagement
 
 * **URL**
@@ -292,6 +328,12 @@ This section includes several commands to get additional information. Instead of
 * **Error Response:**
 
   * **Code:** 403 FORBIDDEN
+
+* **CURL Example**
+
+  ```bash
+  curl -H 'Accept: application/json' 'http://[amtron]:25000/MHCP/1.1/EnergyManagement?Pin=[devkey]'
+  ```
 
 ## Get LanStatus
 
@@ -332,6 +374,12 @@ This section includes several commands to get additional information. Instead of
 
   * **Code:** 403 FORBIDDEN
 
+* **CURL Example**
+
+  ```bash
+  curl -H 'Accept: application/json' 'http://[amtron]:25000/MHCP/1.1/LanStatus?Pin=[devkey]'
+  ```
+
 ## Get LanSettings
 
 * **URL**
@@ -368,6 +416,12 @@ This section includes several commands to get additional information. Instead of
 * **Error Response:**
 
   * **Code:** 403 FORBIDDEN
+
+* **CURL Example**
+
+  ```bash
+  curl -H 'Accept: application/json' 'http://[amtron]:25000/MHCP/1.1/LanSettings?Pin=[devkey]'
+  ```
 
 ## Get WlanStatus
 
@@ -422,6 +476,12 @@ This section includes several commands to get additional information. Instead of
 
   * **Code:** 403 FORBIDDEN
 
+* **CURL Example**
+
+  ```bash
+  curl -H 'Accept: application/json' 'http://[amtron]:25000/MHCP/1.1/WlanStatus?Pin=[devkey]'
+  ```
+
 ## Get WlanApSettings
 
 * **URL**
@@ -458,6 +518,12 @@ This section includes several commands to get additional information. Instead of
 * **Error Response:**
 
   * **Code:** 403 FORBIDDEN
+
+* **CURL Example**
+
+  ```bash
+  curl -H 'Accept: application/json' 'http://[amtron]:25000/MHCP/1.1/WlanApSettings?Pin=[devkey]'
+  ```
 
 ## Get WlanStaSettings
 
@@ -498,6 +564,12 @@ This section includes several commands to get additional information. Instead of
 * **Error Response:**
 
   * **Code:** 403 FORBIDDEN
+
+* **CURL Example**
+
+  ```bash
+  curl -H 'Accept: application/json' 'http://[amtron]:25000/MHCP/1.1/WlanStaSettings?Pin=[devkey]'
+  ```
 
 ## Get RfID
 
@@ -546,6 +618,12 @@ This section includes several commands to get additional information. Instead of
 
   * **Code:** 403 FORBIDDEN
 
+* **CURL Example**
+
+  ```bash
+  curl -H 'Accept: application/json' 'http://[amtron]:25000/MHCP/1.1/RfID?Pin=[devkey]'
+  ```
+
 ## Get ExtensionsInfo
 
 * **URL**
@@ -579,3 +657,9 @@ This section includes several commands to get additional information. Instead of
 * **Error Response:**
 
   * **Code:** 403 FORBIDDEN
+
+* **CURL Example**
+
+  ```bash
+  curl -H 'Accept: application/json' 'http://[amtron]:25000/MHCP/1.1/ExtensionsInfo?Pin=[devkey]'
+  ```
